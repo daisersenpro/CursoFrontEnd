@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+}
+
+a:link, a:visited{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+a:hover, a:active{
+    background-color: rgb(62, 9, 109);
+}

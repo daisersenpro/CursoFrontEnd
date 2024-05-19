@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+
+    <h1>Formulario en HTML</h1>
+        
+        <form action=""><!-- novalidate permite no campos del formularios -->
+            <fieldset> <!-- agrupar elementos Mejora visualmente -->
+                <legend>Datos Personales</legend> <!-- Titulo para agrupar elementos Mejora visualmente --> 
+
+                <label for="idPersona">Id Persona:</label><br/>
+                <input type="text" id="idPersona" name="idPersona" readonly="true" value="100"><br/><!-- readonly solo lectura -->
+
+                <input type="hidden" id="sistema" name="sistema" value="SAP"> <!-- Envia informacion de manera oculta  -->
+
+                <label for="nombre">Nombre:</label> <br/>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su Nombre" required="true"> <br/>
+
+                <label for="apellido">Apellido:</label> <br/>
+                <input type="text" id="apellido" name="apellido" placeholder=" Escriba su Apellido" required="true"> <br/>
+
+                <label for="email">Email:</label> <br/> 
+                <input type="email" id="email" name="email"></label><br/>
+
+                <label for="edad">Edad:</label> <br/> <input type="number" id="edad" name="edad"><br/>
+
+                <label>Genero:</label><br/>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Femenino</label> <br/>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label> <br/><br/>
+
+                <label for="">Genero de Musica Preferido:</label><br/>
+                <input type="checkbox" id="Rock" name="Rock" value="Rock">
+                <label for="Rock">Rock</label> <br/>
+                <input type="checkbox" id="Cumbia" name="Cumbia" value="Cumbia">
+                <label for="Rap">Cumbia</label> <br/>
+                <input type="checkbox" id="Rap" name="Rap" value="Rap">
+                <label for="Rap">Rap</label><br/><br/>
+
+                <label for="autos">Marca de Auto Favorita:</label><br/>
+                <select name="autos" name="autos">
+                    <option value="volvo">Volvo</option>
+                    <option value="audi">Audi</option>
+                    <option value="ford">Ford</option>
+                    <option value="hyundai">Hyundai</option>
+                </select> <br/>
+
+                <label for="comentario">Comentarios:</label> <br/>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="2">Este es mi comentario 
+                </textarea>
+
+                <br/> <br/>
+                <input type="submit" value="Enviar">
+                <br/><br/>
+                <input type="reset" value="Restablecer"> <!-- resetear formulario reset -->
+            </fieldset>
+        </form>
+</body>
+</html>

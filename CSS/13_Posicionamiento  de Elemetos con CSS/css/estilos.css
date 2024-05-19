@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+div{
+    position: static;
+    width: 50%;
+    border: 3px solid black;
+    margin: auto;
+}
+
+.div-relativo{
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: 50%;
+    border: 3px solid black;
+    margin: auto
+}
